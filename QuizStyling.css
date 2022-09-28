@@ -1,0 +1,135 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.title{
+    position: absolute;
+    left: 5%;
+    bottom: 88%;
+}
+
+:root {
+    --hue-neutral:200;
+    --hue-wrong:0;
+    --hue-correct:145;
+
+}
+
+Body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin: 0;
+    height: 100vw;
+    width:100vh;
+    background-color: rgb(160, 196, 153)
+}
+
+ 
+ .initiate_btn2{
+       position: absolute;
+       bottom: 400px;
+}
+
+    .initiate_btn2, .next_btn{
+        font-size: 25px;
+        font-weight: 1000px;
+        color: rgb(49, 112, 112);
+        padding: 10px 20px;
+        border-radius: 7px;
+        border: none;
+        cursor: pointer;
+        background-color: rgb(203, 214, 221);
+        margin: 5px;
+        box-shadow: 0 0 10px 2px;
+    }
+    
+    .exit_btn{
+        font-size: 25px;
+        font-weight: 300px;
+        color: rgb(49, 112, 112);
+        padding: 10px 20px;
+        border-radius: 7px;
+        border: none;
+        cursor: pointer;
+        background-color: rgb(203, 214, 221);
+        margin: 5px;
+        box-shadow: 0 0 10px 2px;
+    }
+
+    .rulesbox{
+        position: absolute;
+        left:65%;
+        bottom: 45%;
+        transform: translate(-50%, -50%);
+        width: 580px;
+        padding: 10px 20px;
+        background: rgb(203, 214, 221);
+        border-radius: 7px;
+        box-shadow: 0 0 10px 2px;
+    }
+     strong{
+        color:rgb(167, 99, 10);
+     }
+
+    
+
+     .container{
+        left: 50px;
+        width:800px;
+        max-width: 80%;
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px 10px;
+        box-shadow: 0 0 10px 2px;
+      
+     }
+
+
+     .btn_grid{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap:5px;
+        margin: 20px;
+     }
+      
+        .btn{
+            --hue:var(--hue-neutral);
+            background-color: rgb(226, 225, 225);
+            font-size: 25px;
+            font-weight: 300px;
+            color: rgb(49, 112, 112);
+            padding: 5px 10px;
+            border-radius: 7px;
+            outline: none;
+            cursor: pointer;
+           
+        }
+
+        .btn:hover {
+            border-color: rgb(39, 167, 10);
+        }
+
+        .btn.correct {
+            background-color: rgb(12, 207, 225);
+            
+        }
+
+        .btn.wrong {
+            background-color: red;
+            
+        }
+
+        .controls{
+            display: flex;
+            justify-self: center;
+            align-items: center;
+        }
+
+       .hide {
+        display: none;
+       }

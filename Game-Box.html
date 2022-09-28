@@ -1,0 +1,56 @@
+<!DOCTYPE <html>
+
+</html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./QuizStyling.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+
+    
+    </head>
+
+    <Body>
+        <header class="title">  
+            <h1> Quiz </h1>
+        </header>
+                <div class="scores"><a href="highscores.html">view high scores</a></div>
+                <div class="timer">time: <span id="time"> 0 </span></div>
+
+                <div class="wrapper">
+                    <div id="rules" class="rulesbox">
+                        <h2> This quiz will test the knowledge you have acquired so far.</h2>
+                           
+                        <p> Rules:<br>
+                            1. You have <strong>2 minutes</strong> to complete the quiz.<br>
+                            2. When you answer incorrectly <strong>5 seconds</strong> will be redacted from the timer.<br>
+                            3. The Quiz will finish either by answering all the questions or when the timer runs out.<br>
+                            4. You will be shown how much questions you answered correctly and score once completed.<br>
+                             <br>
+                            Press Start when Ready!</p>
+                           
+                        </div>
+                        <button id="initiate_btn" class="initiate_btn2"> Start Quiz </button>
+                         </div>
+                   </div> 
+                   <div id="questions" class="hide"> 
+                    <h2 id="question-title"></h2>
+                    <button id="next">Next</button>
+                    <div id="choices" class="choices"><p>choices</p></div>
+                   </div> 
+
+                   <div id="end-screen" class="finalpage hide">
+                    <h2>All Done</h2>
+                    <p>Your final score is <span id="final-score"></span></p>
+                    <p>enter initials: <input id="initials" max="3" type="text"></p>
+                    <button id ="submit"> submit </button>
+                
+                  </div>
+                </div>
+            <script src="./Q&A2.js"></script>
+        <script src="./QuizJS.js"></script>
+    </Body>
+
+    </html>
